@@ -1,0 +1,33 @@
+# Node / npm
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# ---------------------------------------------------------------------------
+# CSV data files
+# ---------------------------------------------------------------------------
+# By default, large CSV files in data/ are ignored to keep the repo lean.
+# To commit a specific file, force-add it:
+#   git add -f data/my_file.csv
+#
+# Or to commit small sample files without force-adding, name them with the
+# "sample_" prefix — those are explicitly allowed below.
+
+data/**/*.csv
+data/*.csv
+
+# Allow sample / example CSV files (< 1 MB snapshots for schema reference)
+!data/**/sample_*.csv
+!data/sample_*.csv
